@@ -14,13 +14,26 @@
         <source src="le.mp4" type="video/mp4">
     </video>
   </body>
-  <body>
-     <video autoplay loop muted control>
-        <source src="ra.mp4" type="video/mp4">
-     </video>
+<body>
+<video id="myVideo" muted>
+  <source src="ra.mp4" type="video/mp4">
+</video>
+
+<audio id="myAudio" loop muted>
+  <source src="ra.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playMedia()">Putar Media</button>
+function playMedia() {
+  var video = document.getElementById("myVideo");
+  var audio = document.getElementById("myAudio");
+
+  video.play();
+  audio.play();
+}
+
   </body>
-  
-  </html>
+</html>
 
 <style>
   
