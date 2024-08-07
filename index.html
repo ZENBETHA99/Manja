@@ -24,6 +24,7 @@
 </audio>
 
 <button onclick="playMedia()">Putar Media</button>
+<button onclick="pauseMedia()">Pause Media</button>
 
   <script>
 function playMedia() {
@@ -33,6 +34,14 @@ function playMedia() {
   video.play();
   audio.play();
 }
+
+function pauseMedia() {
+  var video = document.getElementById("myVideo");
+  var audio = document.getElementById("myAudio");
+
+  video.pause();
+  audio.pause();
+    }
   </script>
 
   </body>
