@@ -10,20 +10,16 @@
   <h1>MERAH PUTIH MENYALA ABANGKU</h1>
   <body>
   
-  <audio id="myAudio" loop>
-  <source src="ra.mp3" type="audio/mp3">
-</audio>
-<button onclick="playAudio()">Play</button>
-
 <script>
   var audio = document.getElementById("myAudio");
+  var video = document.getElementById("fa");
 
   function playAudio() {
     audio.play();
   }
 
-  function pauseAudio() {
-    audio.pause();
+  function playVideo() {
+    video.play();
   }
 </script>
  
@@ -35,6 +31,11 @@
      <video autoplay loop muted control>
         <source src="ra.mp4" type="video/mp4">
     </video>
+      <audio id="myAudio" loop>
+  <source src="ra.mp3" type="audio/mp3">
+</audio>
+<button onclick="playVideo()" "playAudio()">Play</button>
+    
   </body>
   
   </html>
