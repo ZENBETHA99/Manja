@@ -8,19 +8,33 @@
 <body>
   <h1>MERAH PUTIH MENYALA ABANGKU</h1>
   <body>
-    <video autoplay muted control>
+    <video autoplay loop muted control>
         <source src="le.mp4" type="video/mp4">
     </video>
   </body>
   <body>
-     <video autoplay muted control>
+     <video autoplay loop muted control>
         <source src="ra.mp4" type="video/mp4">
     </video>
   </body>
 
-  <audio id="myAudio" autoplay loop>
+<audio id="myAudio" loop muted>
   <source src="ra.mp4" type="audio/mpeg">
-  </audio>
+</audio>
+<button onclick="playAudio()">Play</button>
+<button onclick="pauseAudio()">Pause</button>
+
+<script>
+  var audio = document.getElementById("myAudio");
+
+  function playAudio() {
+    audio.play();
+  }
+
+  function pauseAudio() {
+    audio.pause();
+  }
+</script>
   
   </html>
 
