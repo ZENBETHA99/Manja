@@ -18,9 +18,16 @@
     audio.play();
   }
 
+  function pauseAudio() {
+    audio.pause();
+  }
+
   function playVideo() {
     video.play();
   }
+
+  function pauseVideo() {
+    video.pause();
 </script>
  
     <video autoplay loop muted control>
@@ -34,7 +41,8 @@
       <audio id="myAudio" loop>
   <source src="ra.mp3" type="audio/mp3">
 </audio>
-<button onclick="playVideo()" "playAudio()">Play</button>
+<button onclick="playVideo()" "pauseVideo()">Play/pause</button>
+    <button onclick="playAudio()" "pauseAudio()">Play/pause</button>
     
   </body>
   
