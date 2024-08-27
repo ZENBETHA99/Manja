@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const password = document.getElementById("password").value;
 
         // Dummy authentication (replace this with your actual authentication logic)
-        if (username === "admin" && password === "admin") {
+        if (username === "rarkd" && password === "rarkdmarket") {
             // Simpan informasi login di session storage
             sessionStorage.setItem("isLoggedIn", "true");
 
